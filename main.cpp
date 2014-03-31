@@ -1,13 +1,13 @@
 #include <QApplication>
-#include "ui/mainwindow.h"
+#include "ui/login/dialoglogin.h"
 
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    MainWindow w;
-    w.show();
+    DialogLogin d;
+    d.show();
 
     return a.exec();
 }

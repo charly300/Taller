@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,10 +13,26 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    ui/mainwindow.cpp
+    ui/mainwindow.cpp \
+    ui/login/dialoglogin.cpp \
+    ui/gastos/dialoggasto.cpp \
+    core/gasto.cpp \
+    core/taller.cpp \
+    core/db/connectordb.cpp \
+    core/exception/exception.cpp \
+    core/exception/exceptionvalidator.cpp
 
 HEADERS  += \
-    ui/mainwindow.h
+    ui/mainwindow.h \
+    ui/login/dialoglogin.h \
+    ui/gastos/dialoggasto.h \
+    core/gasto.h \
+    core/taller.h \
+    core/db/connectordb.h \
+    core/exception/exception.h \
+    core/exception/exceptionvalidator.h
 
 FORMS    += \
-    ui/mainwindow.ui
+    ui/mainwindow.ui \
+    ui/login/dialoglogin.ui \
+    ui/gastos/dialoggasto.ui
