@@ -21,6 +21,8 @@ private:
     void validar();
     void openMainWindow();
     void showErrorLogin(QSqlError &);
+
+    void clearPassword();
 private slots:
     void on_pushButton_clicked();
 

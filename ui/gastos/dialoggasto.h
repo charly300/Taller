@@ -2,6 +2,7 @@
 #define DIALOGGASTO_H
 
 #include <QDialog>
+#include "core/gasto.h"
 
 namespace Ui {
 class DialogGasto;
@@ -15,11 +16,18 @@ public:
     explicit DialogGasto(QWidget *parent = 0);
     ~DialogGasto();
 
-private slots:
-    void on_button_action_clicked();
+protected:
+    void validar();
+    void ask(QString);
+    Gasto getGasto();
 
-private:
+private slots:
+    virtual void on_button_action_clicked() = 0;
+
+protected:
     Ui::DialogGasto *ui;
 };
+ 
+
 
 #endif // DIALOGGASTO_H

@@ -10,7 +10,7 @@ class Taller
 public:
     Taller();
 
-    void addGasto(Gasto &);
+    void addGasto(Gasto);
     Gasto *getGasto(int);
 
 private:

@@ -4,13 +4,13 @@ Taller::Taller()
 {
 }
 
-void Taller::addGasto(Gasto &unGasto)
+void Taller::addGasto(Gasto unGasto)
 {
     gastos.append(unGasto);
 }
 
-Gasto *Taller::getGasto(int)
+Gasto *Taller::getGasto(int i)
 {
-
+    return &(gastos[i]);
 }
 

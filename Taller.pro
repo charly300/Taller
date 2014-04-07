@@ -20,7 +20,10 @@ SOURCES += main.cpp \
     core/taller.cpp \
     core/db/connectordb.cpp \
     core/exception/exception.cpp \
-    core/exception/exceptionvalidator.cpp
+    core/exception/exceptionvalidator.cpp \
+    ui/gastos/dialognewgasto.cpp \
+    core/controllertaller.cpp \
+    core/exception/exceptionask.cpp
 
 HEADERS  += \
     ui/mainwindow.h \
@@ -30,7 +33,10 @@ HEADERS  += \
     core/taller.h \
     core/db/connectordb.h \
     core/exception/exception.h \
-    core/exception/exceptionvalidator.h
+    core/exception/exceptionvalidator.h \
+    ui/gastos/dialognewgasto.h \
+    core/controllertaller.h \
+    core/exception/exceptionask.h
 
 FORMS    += \
     ui/mainwindow.ui \

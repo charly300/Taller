@@ -7,6 +7,7 @@
 class Exception
 {
 public:
+    Exception();
     Exception(QString);
     QString getMessage();
 protected:

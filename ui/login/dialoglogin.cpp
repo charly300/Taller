@@ -29,6 +29,7 @@ void DialogLogin::iniciarSesion()
     }
     catch(QSqlError &e){
         this->showErrorLogin(e);
+        this->clearPassword();
     }
     catch(ExceptionValidator *e){
         QMessageBox::warning(this, "Sesión", e->getMessage());
@@ -58,6 +59,11 @@ void DialogLogin::showErrorLogin(QSqlError &e)
     m.setText("Usuario y/o contraseña incorrectos");
     m.setDetailedText(e.text());
     m.exec();
+}
+
+void DialogLogin::clearPassword()
+{
+    ui->lineEdit_pass->clear();
 }
 
 
